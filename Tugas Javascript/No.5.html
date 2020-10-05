@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>No. 5</title>
+
+	<style>
+		.soal{display: block; margin: 10px;}
+		.form, .inputClass, .outputClass{ display:inline-block; margin: 5px;}
+		.solution{margin: 5px}
+	</style>
+</head>
+<body>
+	<div class="soal"><b>Soal: </b>Menghasilkan n Suku Fibonacci Pertama 0, 1, 1, 2, 3, 5…n (n > 2)</div>
+	
+	<div class="form">
+		<b class= "inputClass">Input: </b>
+		<div class="isiInput" style="margin-left: 25px;">
+			<div class= "inputClass">Jumlah N Suku: </div>
+			<input type="number" class="inputClass" id="inputN">
+			<input id="button" type="submit" name="button" onclick="myFunction()" value="Masukkan Nilai"/>
+		</div>
+	</div>
+
+	<div class="solution">
+		<b class="outputClass">Output: </b>
+		<div class="isiOutput" style="margin-left: 25px;">
+			<div class="outputClass" id="outputId"></div>
+		</div>
+	</div>
+		
+
+	<script>
+
+		function myFunction() {
+			var batas= Number(document.getElementById("inputN").value);
+			var fib= [batas];
+			var temp= "";
+			var i;
+
+			fib[0]= 0;
+	        fib[1]= 1;
+	         
+		        for(i=2; i<batas; i++) {
+		            fib[i]= fib[i-1]+fib[i-2];
+		        }
+		         
+		        for (i=0; i<batas; i++) {
+		            temp+= fib[i];
+		            if(i<(batas-1))temp+=", ";
+		        }
+	        document.getElementById("outputId").innerHTML= (temp);
+			}
+			
+	</script>
+</body>
+</html>

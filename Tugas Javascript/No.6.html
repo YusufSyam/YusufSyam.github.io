@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>No. 6</title>
+
+	<style>
+		.soal{display: block; margin: 10px;}
+		.form, .inputClass, .outputClass{ display:inline-block; margin: 5px;}
+		.solution{margin: 5px}
+	</style>
+</head>
+<body>
+	<div class="soal"><b>Soal: </b>Mencari Apakah Suatu Bilangann termasuk Bilangan Prima atau Tidak</div>
+	
+	<div class="form">
+		<b class= "inputClass">Input: </b>
+		<div class="isiInput" style="margin-left: 25px;">
+			<div class= "inputClass">Cek Angka: </div>
+			<input type="number" class="inputClass" id="inputN">
+			<input id="button" type="submit" name="button" onclick="myFunction()" value="Masukkan Nilai"/>
+		</div>
+	</div>
+
+	<div class="solution">
+		<b class="outputClass">Output: </b>
+		<div class="isiOutput" style="margin-left: 25px;">
+			<div class="outputClass" id="outputId"></div>
+		</div>
+	</div>
+		
+
+	<script>
+
+		function myFunction() {
+			var n= Number(document.getElementById("inputN").value);
+			if(primeCheck(n)) document.getElementById("outputId").innerHTML= (n+" Merupakan bilangan prima");
+			else document.getElementById("outputId").innerHTML= (n+" Bukan bilangan prima");
+			
+		}
+
+		function primeCheck(n){
+			var i;
+
+			if(n==1) return false;
+			else if(n==2) return true;
+			else{
+				for(i=2; i<n; i++) {
+					if(n%i==0) return false;
+				}
+				return true;  
+			}
+		}
+
+	</script>
+</body>
+</html>

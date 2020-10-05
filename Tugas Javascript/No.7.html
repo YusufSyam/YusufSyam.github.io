@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>No. 7</title>
+
+	<style>
+		.soal{display: block; margin: 10px;}
+		.form, .inputClass, .outputClass{ display:inline-block; margin: 5px;}
+		.solution{margin: 5px}
+	</style>
+</head>
+<body>
+	<div class="soal"><b>Soal: </b>Mencari Faktorial Bilangan n (n!=1x2x3x4x5x…xn)</div>
+	
+	<div class="form">
+		<b class= "inputClass">Input: </b>
+		<div class="isiInput" style="margin-left: 25px;">
+			<div class= "inputClass">N: </div>
+			<input type="number" class="inputClass" id="inputN">
+			<input id="button" type="submit" name="button" onclick="myFunction()" value="Masukkan Nilai"/>
+		</div>
+	</div>
+
+	<div class="solution">
+		<b class="outputClass">Output: </b>
+		<div class="isiOutput" style="margin-left: 25px;">
+			<div class="outputClass" id="outputId"></div>
+		</div>
+	</div>
+		
+
+	<script>
+
+		function myFunction() {
+			var batas= document.getElementById("inputN").value;
+			var temp=1;
+
+			for(var i=1; i<=batas; i++)temp*=i;
+			document.getElementById("outputId").innerHTML=("Faktorial dari angka "+batas+"= "+temp);
+		}
+	</script>
+</body>
+</html>

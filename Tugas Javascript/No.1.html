@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>No. 1</title>
+
+	<style>
+		.soal{display: block; margin: 10px;}
+		.form, .inputClass, .outputClass{ display:inline-block; margin: 5px;}
+		.solution{margin: 5px}
+	</style>
+</head>
+<body>
+	<div class="soal"><b>Soal: </b>Menentukan Jumlah (SUM) dan Rata-Rata (AVERAGE) dari Deretan Angka yang Diberikan</div>
+
+	<div class="form">
+		<b class= "inputClass">Input: </b>
+		<div class="isiInput" style="margin-left: 25px;">
+			<div class= "inputClass">Jumlah Angka: </div>
+			<input type="number" class="inputClass" id="inputBatas" >
+			<input id="button" type="submit" name="button" onclick="setBatas()" value="Masukkan Nilai"/><br>
+
+			<div class= "inputClass" id= "DeretAngka">Angka ke-1: </div>
+			<input type="number" class="inputClass" id="inputAngka">
+			<input id="button" type="submit" name="button" onclick="myFunction()" value="Masukkan Angka"/>
+		</div>
+	</div>
+
+	<div class="solution">
+		<b class="outputClass">Output: </b>
+		<div class="isiOutput" style="margin-left: 25px;">
+			<div class="outputClass" id="outputId"></div>
+		</div>
+	</div>
+		
+
+	<script>
+		var sum= 0;
+		var batas= 1;
+		var count= 1;
+
+		function setBatas(){
+			batas= Number(document.getElementById("inputBatas").value);
+		}
+
+		function myFunction() {
+			x= document.getElementById("inputBatas").value
+			if (x == null || x == "" || x==0) {
+		        alert("Jumlah Angka harus diisi dan disubmit terlebih dahulu");
+		        return false;
+		    }
+
+			if(count<=batas){
+				sum+= Number(document.getElementById("inputAngka").value);
+				if(count==batas) {
+					document.getElementById("outputId").innerHTML= ("Rata-rata: "+(sum/count));
+					count= batas+1;
+				}
+				else{
+					count++;
+					document.getElementById("DeretAngka").innerHTML= ("Angka ke-"+count+": ");
+				}
+			}
+		}
+	</script>
+</body>
+</html>

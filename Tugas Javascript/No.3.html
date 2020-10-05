@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>No. 3</title>
+
+	<style>
+		.soal{display: block; margin: 10px;}
+		.form, .inputClass, .outputClass{ display:inline-block; margin: 5px;}
+		.solution{margin: 5px}
+	</style>
+</head>
+<body>
+	<div class="soal"><b>Soal: </b>Mencari Jumlah (SUM) dari Deret 1-X+X^2-X^3+…X^N</div>
+	
+	<div class="form">
+		<b class= "inputClass">Input: </b>
+		<div class="isiInput" style="margin-left: 25px;">
+			<div class= "inputClass">N (Pangkat): </div>
+			<input type="number" class="inputClass" id="inputN">
+			<div class= "inputClass">X (Angka): </div>
+			<input type="number" class="inputClass" id="inputX">
+			<input id="button" type="submit" name="button" onclick="myFunction()" value="Masukkan Nilai"/>
+		</div>
+	</div>
+
+	<div class="solution">
+		<b class="outputClass">Output: </b>
+		<div class="isiOutput" style="margin-left: 25px;">
+			<div class="outputClass" id="outputId"></div>
+		</div>
+	</div>
+		
+
+	<script>
+
+		function myFunction() {
+			var angka, temp, i;
+			temp= 0;
+			angka= Number(document.getElementById("inputX").value);
+
+			for(i=0; i<=Number(document.getElementById("inputN").value); i++)i%2==0? temp+= Math.pow(angka,i) : temp-= Math.pow(angka,i);
+			document.getElementById("outputId").innerHTML= ("Hasil: "+temp);
+		}
+	</script>
+</body>
+</html>

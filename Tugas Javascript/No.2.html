@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>No. 2</title>
+
+	<style>
+		.soal{display: block; margin: 10px;}
+		.form, .inputClass, .outputClass{ display:inline-block; margin: 5px;}
+		.solution{margin: 5px}
+	</style>
+</head>
+<body>
+	<div class="soal"><b>Soal: </b>Mencari Angka Genap dan Ganjil antara 1 sampai N</div>
+	
+	<div class="form">
+		<b class= "inputClass">Input: </b>
+		<div class="isiInput" style="margin-left: 25px;">
+			<div class= "inputClass">N: </div>
+			<input type="number" class="inputClass" id="inputN">
+			<input id="button" type="submit" name="button" onclick="myFunction()" value="Masukkan N"/>
+		</div>
+	</div>
+
+	<div class="solution">
+		<b class="outputClass">Output: </b>
+		<div class="isiOutput" style="margin-left: 25px;">
+			<div class="outputClass" id="outputId"></div>
+		</div>
+	</div>
+		
+
+	<script>
+
+		function myFunction() {
+			var batas, ganjil, genap, i;
+			batas= Number(document.getElementById("inputN").value);
+			ganjil= ""; genap= "";
+			for(i=1; i<=batas; i++){
+				if(i%2==0){
+					genap+= i;
+					if(i<batas-1) genap+=", ";
+				}else{
+					ganjil+= i;
+					if(i<batas-1) ganjil+=", ";
+				}
+
+			}
+			document.getElementById("outputId").innerHTML= ("Angka Genap: "+genap+"<br>Angka Ganjil : "+ganjil);
+		}
+	</script>
+</body>
+</html>

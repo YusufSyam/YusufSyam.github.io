@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>No. 4</title>
+
+	<style>
+		.soal{display: block; margin: 10px;}
+		.form, .inputClass, .outputClass{ display:inline-block; margin: 5px;}
+		.solution{margin: 5px}
+	</style>
+</head>
+<body>
+	<div class="soal"><b>Soal: </b>Mencetak Tabel Perkalian 1 sampai 10 Sebuah Bilangan</div>
+	
+	<div class="form">
+		<b class= "inputClass">Input: </b>
+		<div class="isiInput" style="margin-left: 25px;">
+			<div class= "inputClass">Masukkan Angka: </div>
+			<input type="number" class="inputClass" id="inputAngka">
+			<input id="button" type="submit" name="button" onclick="myFunction()" value="Masukkan Nilai"/>
+		</div>
+	</div>
+
+	<div class="solution">
+		<b class="outputClass">Output: </b>
+		<div class="isiOutput" style="margin-left: 25px;">
+			<div class="outputClass" id="outputId"></div>
+		</div>
+	</div>
+		
+
+	<script>
+
+		function myFunction() {
+			var temp, i;
+			temp= "Tabel perkalian 1-10 angka "+document.getElementById("inputAngka").value+": <br>";
+			for(i=1; i<=10; i++) temp+= (document.getElementById("inputAngka").value+" x "+i+" = "+(Number(document.getElementById("inputAngka").value)*i)+" <br>");
+			document.getElementById("outputId").innerHTML= (temp);
+		}
+		
+		
+	</script>
+</body>
+</html>
