@@ -1,0 +1,157 @@
+  body { 
+    background-color: rgb(230,230,230);
+  }
+
+  .header{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .garis{
+      width: 58%;
+      border: 1px solid rgb(255,252,142);
+    }
+
+    .header1{
+      background-color: rgb(255,252,142);
+      position: relative;
+      color: white;
+      text-align: center;
+      font-family: "Lucida Console", Courier, monospace;
+      font-size: 50px;
+      padding-top: 1px;
+      padding-bottom: 7px;
+      padding-left: 17px;
+      padding-right: 17px;
+      border: 3px solid rgb(210,210,210);
+      border-radius: 8px;
+      text-shadow:  -1px -1px 0 rgb(180,180,180),
+        1px -1px 0 rgb(180,180,180),
+        -1px 1px 0 rgb(180,180,180),
+        1px 1px 0 rgb(180,180,180),  
+        -2px 0 0 rgb(180,180,180),
+        2px 0 0 rgb(180,180,180),
+        0 2px 0 rgb(180,180,180),
+        0 -2px 0 rgb(180,180,180);
+    }
+
+      .header2{
+      color: rgb(250,248,177);
+      text-align: center;
+      font-family: "Lucida Console", Courier, monospace;
+      font-size: 50px;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 12px;
+      padding-left: 10px;
+      text-shadow:  -1px -1px 0 rgb(255,186,115),
+        1px -1px 0 rgb(255,186,115),
+        -1px 1px 0 rgb(255,186,115),
+        1px 1px 0 rgb(255,186,115),  
+        -2px 0 0 rgb(255,186,115),
+        2px 0 0 rgb(255,186,115),
+        0 2px 0 rgb(255,186,115),
+        0 -2px 0 rgb(255,186,115);
+    }
+
+    .header3{
+      color: white;
+      text-align: center;
+      font-family: "Lucida Console", Courier, monospace;
+      font-size: 50px;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      text-shadow:  -1px -1px 0 rgb(180,180,180),
+        1px -1px 0 rgb(180,180,180),
+        -1px 1px 0 rgb(180,180,180),
+        1px 1px 0 rgb(180,180,180),  
+        -2px 0 0 rgb(180,180,180),
+        2px 0 0 rgb(180,180,180),
+        0 2px 0 rgb(180,180,180),
+        0 -2px 0 rgb(180,180,180);
+    }
+
+  label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  #card {
+    background: white;
+    border-radius: 10px;
+    height: 400px;
+    margin: 20px auto 0 auto;
+    width: 350px;
+  }
+  #card-content {
+    padding: 12px 44px;
+  }
+  #card-title {
+    font-family: Arial, sans-serif;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    padding-top: 13px;
+    text-align: center;
+  }
+
+  #EmailPassword{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(120,120,120);
+    margin-top: 20px;
+  }
+
+  #signup {
+    color: #20167c;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: center;
+  }
+  #submit-btn {
+
+  overflow: hidden;-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+    background-color: rgb(255,252,142);
+    border-radius: 2px;
+    color: rgb(100,100,100);
+    font-family: "Arial", sans-serif;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 70px;
+    transition: 0.5s;
+    width: 160px;
+  }
+
+    #submit-btn:hover {
+    background-color: rgb(120,120,120);
+    color: rgb(255,252,142);
+    }
+
+  .form {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-border {
+    background: -webkit-linear-gradient(right, rgb(120,120,120), rgb(120,120,120));
+    height: 1px;
+    width: 100%;
+  }
+  .form-content {
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+    padding : 6px;
+    border-left: 3px solid rgb(255,252,142);
+  }
+  .underline-title {
+    background: -webkit-linear-gradient(right, #193a8d, #193a8d);
+    height: 2px;
+    margin: -1.1rem auto 0 auto;
+    width: 89px;
+  }

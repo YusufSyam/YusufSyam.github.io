@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styleLogin5.css">
+</head>
+
+<body>
+  <div class= header>
+    <center>
+      <h class= header1>y</h >
+      <h class= header2>+</h>
+      <h class= header3>H T M L</h>
+    </center><br><br>
+    <center><hr class="garis"></center>
+  </div>
+  <div id="card">
+    <div id="card-content">
+      <div id="card-title">
+        <h2>Login</h2>
+      </div>
+      <form method="post" class="form">
+        <label id="EmailPassword" for="user-email" style="padding-top:13px">
+          <b>&nbsp;Username</b>
+          </label>
+        <input id="user-email" class="form-content" name="Username" placeholder="Username"/>
+        <div class="form-border"></div>
+        <label id="EmailPassword" for="user-password" ><b>&nbsp;Password</b>
+          </label>
+        <input id="user-password" class="form-content" name="password" type="password" required placeholder="Password"/>
+        <div class="form-border"></div>
+        <input id="submit-btn" type="button" onclick="check(this.form)" value="Login"/> 
+      </form>
+
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script language="javascript">
+function check(form)
+{
+ 
+ if(form.Username.value == "username" && form.password.value == "kucing123")
+  {
+    window.open('https://www.youtube.com/c/dewclarke?sub_confirmation=1')
+  }
+ else
+ {
+   alert("Please subscribe to my channel for more coding!")
+  }
+}
+</script>
+    </div>
+  </div>
+</body>
+
+</html>
