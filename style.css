@@ -430,6 +430,7 @@ input:required {
   margin-bottom: 2.7vw;
   width: 14.641288433382138vw;
   border-radius: 3.6603221083455346vw;
+  border: none;
 }
 
 .chooseLangRow{
