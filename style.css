@@ -326,7 +326,6 @@ input:required {
 
 .text .header2{
   font-size: 1.171303074670571vw;
-  margin : -0.8784773060029283vw 0 0.8784773060029283vw;
   padding-bottom: 0.7320644216691069vw;
 }
 
@@ -419,7 +418,7 @@ input:required {
 
 .langHeader{
   display: flex;
-  margin: 3.22108345534407vw 1.171303074670571vw -0.7320644216691069vw;  
+  margin: 3.22108345534407vw 1.171303074670571vw;  
   text-align: center;
   align-content: center;
   justify-content: center;
