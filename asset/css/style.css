@@ -299,17 +299,17 @@ input:required {
   object-fit:cover;
 }
 
-.background-image {
+/* .background-image {
   width: 100%;
   object-fit:cover;
-}
+} */
 
-.background-image-opacitor {
+/* .background-image-opacitor {
   width: 100%;
   opacity: 0.6;
   object-fit:cover;
   position: absolute;
-}
+} */
 
 .imageCaption{
   display: flex;
