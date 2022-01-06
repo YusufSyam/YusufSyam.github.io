@@ -315,7 +315,7 @@ input:required {
   display: flex;
 }
 
-.text {
+/* .text {
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -373,7 +373,7 @@ input:required {
 }
 .text form button:hover{
   color: rgb(255,252,142);
-}
+} */
 
 .caption2{
   position: absolute;
